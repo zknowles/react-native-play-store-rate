@@ -1,0 +1,29 @@
+{
+  "name": "react-native-play-store-rate",
+  "version": "1.0.4",
+  "description": "Package for opening the Play Store to write a review for a given app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "author": "Zachary Knowles",
+  "license": "MIT",
+  "peerDependencies": {
+    "react-native": "^0.41.2",
+    "react-native-windows": "0.41.0-rc.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zknowles/react-native-play-store-rate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zknowles/react-native-play-store-rate/issues"
+  },
+  "homepage": "https://github.com/zknowles/react-native-play-store-rate#readme",
+  "dependencies": {
+    "eslint": "^5.16.0"
+  }
+}
