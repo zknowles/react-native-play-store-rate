@@ -7,8 +7,10 @@ import com.facebook.react.bridge.ReactMethod;
 
 import android.net.Uri;
 import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
+import android.content.ActivityNotFoundException;
 
-public class RNPlayStoreRateModule extends ReactContextBaseJavaModule {
+public class RNPlayStoreRateModule extends ReactContextBaseJavaModule, AppCompatActivity {
 
   private final ReactApplicationContext reactContext;
 
