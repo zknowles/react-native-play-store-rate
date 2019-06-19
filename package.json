@@ -1,6 +1,6 @@
 {
   "name": "react-native-play-store-rate",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Package for opening the Play Store to write a review for a given app",
   "main": "index.js",
   "scripts": {

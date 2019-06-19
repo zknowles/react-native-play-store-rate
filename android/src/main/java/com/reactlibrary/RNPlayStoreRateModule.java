@@ -7,10 +7,9 @@ import com.facebook.react.bridge.ReactMethod;
 
 import android.net.Uri;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.content.ActivityNotFoundException;
 
-public class RNPlayStoreRateModule extends ReactContextBaseJavaModule, AppCompatActivity {
+public class RNPlayStoreRateModule extends ReactContextBaseJavaModule {
 
   private final ReactApplicationContext reactContext;
 
@@ -29,9 +28,9 @@ public class RNPlayStoreRateModule extends ReactContextBaseJavaModule, AppCompat
                       Intent.FLAG_ACTIVITY_NEW_DOCUMENT |
                       Intent.FLAG_ACTIVITY_MULTIPLE_TASK);
       try {
-          startActivity(goToMarket);
+          this.reactContext.startActivity(goToMarket);
       } catch (ActivityNotFoundException e) {
-          startActivity(new Intent(Intent.ACTION_VIEW,
+          this.reactContext.startActivity(new Intent(Intent.ACTION_VIEW,
                   Uri.parse("http://play.google.com/store/apps/details?id=" + id)));
       }
   }
